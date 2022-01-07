@@ -4,12 +4,16 @@ import {
   Meta,
   Outlet,
   Scripts,
-  ScrollRestoration
+  ScrollRestoration,
 } from "remix";
 import type { MetaFunction } from "remix";
+import styles from "./tailwind.css";
 
+export function links() {
+  return [{ rel: "stylesheet", href: styles }];
+}
 export const meta: MetaFunction = () => {
-  return { title: "New Remix App" };
+  return { title: "Kuyo Dynamics" };
 };
 
 export default function App() {
@@ -21,7 +25,7 @@ export default function App() {
         <Meta />
         <Links />
       </head>
-      <body>
+      <body className="leading-normal tracking-normal text-white gradient">
         <Outlet />
         <ScrollRestoration />
         <Scripts />
