@@ -13,7 +13,7 @@ export function links() {
   return [{ rel: "stylesheet", href: styles }];
 }
 export const meta: MetaFunction = () => {
-  return { title: "Kuyo Dynamics" };
+  return { title: "Kuyo Coding Club" };
 };
 
 export default function App() {

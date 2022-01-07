@@ -1,6 +1,8 @@
-import ConnectedWorldSVG from "~/components/svg/connectedWorld";
+import BusinessBrief from "~/components/businessbrief";
+import Inspiration from "~/components/inspiration";
+import NavBar from "~/components/navbar";
 import StrokeShadowSVG from "~/components/svg/strokeShadow";
-import TravelBookingSVG from "~/components/travelbooking";
+import ToolkitsList from "~/components/toolkitslist";
 import styles from "~/styles/index.css";
 
 export function links() {
@@ -8,231 +10,15 @@ export function links() {
 }
 export default function Index() {
   return (
-    // <!--Nav-->
     <>
-      <nav id="header" className="fixed w-full z-30 top-0 text-white">
-        <div className="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
-          <div className="pl-4 flex items-center">
-            <a
-              className="toggleColour text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl"
-              href="#"
-            >
-              Kuyo Coding Club
-              <br />
-              <small className="font-mono h-10 text-gray-300">
-                Learn | Make | Code
-              </small>
-            </a>
-          </div>
-          <div className="block lg:hidden pr-4">
-            <button
-              id="nav-toggle"
-              className="flex items-center p-1 text-pink-800 hover:text-gray-900 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
-            >
-              <svg
-                className="fill-current h-6 w-6"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <title>Menu</title>
-                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-              </svg>
-            </button>
-          </div>
-          <div
-            className="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 bg-white lg:bg-transparent text-black p-4 lg:p-0 z-20"
-            id="nav-content"
-          >
-            <ul className="list-reset lg:flex justify-end flex-1 items-center">
-              <li className="mr-3">
-                <a
-                  className="inline-block py-2 px-4 text-black font-bold no-underline"
-                  href="#"
-                >
-                  Home
-                </a>
-              </li>
-              <li className="mr-3">
-                <a
-                  className="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
-                  href="#"
-                >
-                  Toolkits
-                </a>
-              </li>
-              <li className="mr-3">
-                <a
-                  className="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
-                  href="#"
-                >
-                  Pricing
-                </a>
-              </li>
-              <li className="mr-3">
-                <a
-                  className="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
-                  href="#"
-                >
-                  Team
-                </a>
-              </li>
-            </ul>
-            <button
-              id="navAction"
-              className="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
-            >
-              Menu
-            </button>
-          </div>
-        </div>
-        <hr className="border-b border-gray-100 opacity-25 my-0 py-0" />
-      </nav>
-      {/* Club Section */}
-      <div className="pt-24">
-        <div className="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
-          {/* Left Col */}
-          <div className="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
-            <h1 className="my-4 text-5xl font-bold leading-tight">
-              A prestigious coding club!
-            </h1>
-            <p className="leading-normal text-2xl mb-8">
-              Aged 12-20 years? Awesome! You can become really good at computer
-              programming, create awesome Apps and games. We provide you with
-              all the cool toolkits, and help you meet/work with other awesome
-              tech saavy friends!
-            </p>
-            <button className="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-              Join our club now!
-            </button>
-          </div>
-          {/* <!--Right Col--> */}
-          <div className="w-full md:w-3/5 py-6 text-center">
-            <img className="w-full md:w-4/5 z-50" src="hero.png" />
-          </div>
-        </div>
-      </div>
+      <NavBar />
+      <BusinessBrief />
       <StrokeShadowSVG />
       <section className="bg-white border-b py-8">
-        <div className="container max-w-5xl mx-auto m-8">
-          <h1 className="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
-            Toolkits
-          </h1>
-          <div className="w-full mb-4">
-            <div className="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
-          </div>
-          <div className="flex flex-wrap">
-            <div className="w-5/6 sm:w-1/2 p-6">
-              <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3">
-                Lorem ipsum dolor sit amet
-              </h3>
-              <p className="text-gray-600 mb-8">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-                at ipsum eu nunc commodo posuere et sit amet ligula.
-                <br />
-                <br />
-                Images from:
-                <a
-                  className="text-pink-500 underline"
-                  href="https://undraw.co/"
-                >
-                  undraw.co
-                </a>
-              </p>
-            </div>
-            {/* Travelbooking */}
-            <TravelBookingSVG />
-          </div>
-          {/* connected world! */}
-          <ConnectedWorldSVG />
-        </div>
+        <ToolkitsList />
       </section>
       <section className="bg-white border-b py-8">
-        <div className="container mx-auto flex flex-wrap pt-4 pb-12">
-          <h1 className="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
-            Title
-          </h1>
-          <div className="w-full mb-4">
-            <div className="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
-          </div>
-          <div className="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
-            <div className="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
-              <a
-                href="#"
-                className="flex flex-wrap no-underline hover:no-underline"
-              >
-                <p className="w-full text-gray-600 text-xs md:text-sm px-6">
-                  xGETTING STARTED
-                </p>
-                <div className="w-full font-bold text-xl text-gray-800 px-6">
-                  Lorem ipsum dolor sit amet.
-                </div>
-                <p className="text-gray-800 text-base px-6 mb-5">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Aliquam at ipsum eu nunc commodo posuere et sit amet ligula.
-                </p>
-              </a>
-            </div>
-            <div className="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
-              <div className="flex items-center justify-start">
-                <button className="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-                  Action
-                </button>
-              </div>
-            </div>
-          </div>
-          <div className="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
-            <div className="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
-              <a
-                href="#"
-                className="flex flex-wrap no-underline hover:no-underline"
-              >
-                <p className="w-full text-gray-600 text-xs md:text-sm px-6">
-                  xGETTING STARTED
-                </p>
-                <div className="w-full font-bold text-xl text-gray-800 px-6">
-                  Lorem ipsum dolor sit amet.
-                </div>
-                <p className="text-gray-800 text-base px-6 mb-5">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Aliquam at ipsum eu nunc commodo posuere et sit amet ligula.
-                </p>
-              </a>
-            </div>
-            <div className="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
-              <div className="flex items-center justify-center">
-                <button className="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-                  Action
-                </button>
-              </div>
-            </div>
-          </div>
-          <div className="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
-            <div className="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
-              <a
-                href="#"
-                className="flex flex-wrap no-underline hover:no-underline"
-              >
-                <p className="w-full text-gray-600 text-xs md:text-sm px-6">
-                  xGETTING STARTED
-                </p>
-                <div className="w-full font-bold text-xl text-gray-800 px-6">
-                  Lorem ipsum dolor sit amet.
-                </div>
-                <p className="text-gray-800 text-base px-6 mb-5">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Aliquam at ipsum eu nunc commodo posuere et sit amet ligula.
-                </p>
-              </a>
-            </div>
-            <div className="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
-              <div className="flex items-center justify-end">
-                <button className="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-                  Action
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
+        <Inspiration />
       </section>
       <section className="bg-gray-100 py-8">
         <div className="container mx-auto px-2 pt-4 pb-12 text-gray-800">
