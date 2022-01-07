@@ -1,4 +1,4 @@
-export default function StrokeShadowSVG() {
+export default function WaveBottomSVG() {
   return (
     <div className="relative -mt-12 lg:-mt-24">
       <svg
