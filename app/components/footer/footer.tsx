@@ -2,7 +2,7 @@ import FooterCompany from "./footercompany";
 import FooterLegal from "./footerlegal";
 import FooterLinks from "./footerlinks";
 import FooterSocial from "./footersocial";
-import LogoSVG from "./svg/logo";
+import LogoSVG from "../svg/logo";
 
 export default function Footer() {
   return (
