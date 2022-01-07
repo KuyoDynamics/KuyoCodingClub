@@ -1,6 +1,6 @@
 import BusinessBrief from "~/components/businessbrief";
 import CallToAction from "~/components/calltoaction";
-import Footer from "~/components/footer";
+import Footer from "~/components/footer/footer";
 import Inspiration from "~/components/inspiration";
 import NavBar from "~/components/navbar";
 import Pricing from "~/components/pricing";
