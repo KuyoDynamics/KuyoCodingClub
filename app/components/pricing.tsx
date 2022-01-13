@@ -21,7 +21,7 @@ export default function Pricing() {
           </div>
           <div className="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
             <div className="w-full pt-6 text-3xl text-gray-600 font-bold text-center">
-              £0
+              ZMW0
               <span className="text-base">for one user</span>
             </div>
             <div className="flex items-center justify-center">
@@ -46,8 +46,8 @@ export default function Pricing() {
           </div>
           <div className="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
             <div className="w-full pt-6 text-4xl font-bold text-center">
-              £x.99
-              <span className="text-base">/ per user</span>
+              ZMW450
+              <span className="text-base">/ per user / per month</span>
             </div>
             <div className="flex items-center justify-center">
               <button className="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
@@ -69,8 +69,8 @@ export default function Pricing() {
           </div>
           <div className="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
             <div className="w-full pt-6 text-3xl text-gray-600 font-bold text-center">
-              £x.99
-              <span className="text-base">/ per user</span>
+              ZMW750
+              <span className="text-base">/ per user / per month</span>
             </div>
             <div className="flex items-center justify-center">
               <button className="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">

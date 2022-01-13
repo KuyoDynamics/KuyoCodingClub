@@ -16,8 +16,12 @@ export default function Index() {
   return (
     <>
       <NavBar />
-      <BusinessBrief />
-      <WaveBottomSVG />
+      <div className="pt-24">
+        <BusinessBrief />
+      </div>
+      <div className="relative -mt-12 lg:-mt-24">
+        <WaveBottomSVG />
+      </div>
       <section className="bg-white border-b py-8">
         <ToolkitsList />
       </section>
