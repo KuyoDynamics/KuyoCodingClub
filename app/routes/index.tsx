@@ -19,9 +19,22 @@ export default function Index() {
       <div className="pt-24">
         <BusinessBrief />
       </div>
-      <div className="relative -mt-12 lg:-mt-24">
+      <div className="relative -mt-12 lg:-mt-20">
         <WaveBottomSVG />
       </div>
+      <section className="bg-white border-b py-8">
+      <h1 className="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
+      Aged 12-20 years?
+      </h1>
+        <p className="leading-normal text-2xl mb-8 text-black">
+          {/* <span className="rounded-full inline-block animate-gradient bg-gradient-to-r from-yellow-500 via-blue-500 to-orange-500 bg-[length:150%_150%] p-2">
+            <p className="bg-gray-500 p-2 rounded-full">Aged 12-20 years?</p>
+          </span> */}
+          Awesome! You can become really good at computer programming, create
+          awesome Apps and games. We provide you with all the cool toolkits, and
+          help you meet/work with other tech savvy friends!
+        </p>
+      </section>
       <section className="bg-white border-b py-8">
         <ToolkitsList />
       </section>

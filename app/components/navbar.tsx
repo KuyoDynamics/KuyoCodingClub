@@ -9,7 +9,7 @@ export default function NavBar() {
           >
             Kuyo Coding Club
             <br />
-            <small className="font-mono h-10 text-gray-300">
+            <small className="font-mono text-gray-300">
               Learn | Make | Code
             </small>
           </a>
@@ -30,13 +30,13 @@ export default function NavBar() {
           </button>
         </div>
         <div
-          className="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 bg-white lg:bg-transparent text-black p-4 lg:p-0 z-20"
+          className="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 bg-white lg:bg-transparent text-white p-4 lg:p-0 z-20"
           id="nav-content"
         >
           <ul className="list-reset lg:flex justify-end flex-1 items-center">
             <li className="mr-3">
               <a
-                className="inline-block py-2 px-4 text-black font-bold no-underline"
+                className="inline-block py-2 px-4 font-bold no-underline"
                 href="#"
               >
                 Home
@@ -44,7 +44,7 @@ export default function NavBar() {
             </li>
             <li className="mr-3">
               <a
-                className="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
+                className="inline-block no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
                 href="#"
               >
                 Toolkits
@@ -52,7 +52,7 @@ export default function NavBar() {
             </li>
             <li className="mr-3">
               <a
-                className="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
+                className="inline-block no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
                 href="#"
               >
                 Get Inspired!
@@ -60,7 +60,7 @@ export default function NavBar() {
             </li>
             <li className="mr-3">
               <a
-                className="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
+                className="inline-block no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
                 href="#"
               >
                 Pricing
@@ -68,7 +68,7 @@ export default function NavBar() {
             </li>
             <li className="mr-3">
               <a
-                className="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
+                className="inline-block no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
                 href="#"
               >
                 Team
@@ -79,7 +79,7 @@ export default function NavBar() {
             id="navAction"
             className="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
           >
-            Menu
+            Sign-In
           </button>
         </div>
       </div>
