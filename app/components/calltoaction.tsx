@@ -1,6 +1,8 @@
+import JoinClubButton from "./join_club_button";
+
 export default function CallToAction() {
   return (
-    <>
+    <div className="container mx-auto text-center py-6 mb-12">
       <h1 className="w-full my-2 text-5xl font-bold leading-tight text-center text-white">
         Be Awesome!
       </h1>
@@ -10,9 +12,7 @@ export default function CallToAction() {
       <h3 className="my-4 text-3xl leading-tight">
         Hangout with the buddies at Kuyo Coding Club!
       </h3>
-      <button className="animate-pulse mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-        Join our club now!
-      </button>
-    </>
+      <JoinClubButton />
+    </div>
   );
 }

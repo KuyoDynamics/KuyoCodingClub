@@ -1,4 +1,4 @@
-import BusinessBrief from "~/components/businessbrief";
+import HeroSection from "~/components/herosection";
 import CallToAction from "~/components/calltoaction";
 import Footer from "~/components/footer/footer";
 import Inspiration from "~/components/inspiration";
@@ -15,21 +15,21 @@ export function links() {
 export default function Index() {
   return (
     <>
-      <NavBar />
-      <div className="pt-24">
-        <BusinessBrief />
-      </div>
-      <div className="relative -mt-12 lg:-mt-20">
+      <section>
+        <NavBar />
+      </section>
+      <section>
+        <HeroSection />
+      </section>
+      <div className="relative -mt-12 lg:-mt-32">
         <WaveBottomSVG />
       </div>
       <section className="bg-white border-b py-8">
-      <h1 className="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
-      Aged 12-20 years?
-      </h1>
+        <h1 className="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
+          Aged 12-16 years?
+        </h1>
         <p className="leading-normal text-2xl mb-8 text-black">
-          {/* <span className="rounded-full inline-block animate-gradient bg-gradient-to-r from-yellow-500 via-blue-500 to-orange-500 bg-[length:150%_150%] p-2">
-            <p className="bg-gray-500 p-2 rounded-full">Aged 12-20 years?</p>
-          </span> */}
+         
           Awesome! You can become really good at computer programming, create
           awesome Apps and games. We provide you with all the cool toolkits, and
           help you meet/work with other tech savvy friends!
@@ -44,8 +44,8 @@ export default function Index() {
       <section className="bg-gray-100 py-8">
         <Pricing />
       </section>
-      <WaveTopSVG />
-      <section className="container mx-auto text-center py-6 mb-12">
+      <section>
+        <WaveTopSVG />
         <CallToAction />
       </section>
       <Footer />

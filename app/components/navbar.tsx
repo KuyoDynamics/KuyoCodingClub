@@ -1,17 +1,14 @@
 export default function NavBar() {
   return (
-    <nav id="header" className="fixed w-full z-30 top-0 text-white gradient">
-      <div className="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
-        <div className="pl-4 flex items-center">
+    <nav id="header" className="w-full z-30 top-0 text-white gradient">
+      <div className="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 px-8 py-2">
+        <div className="flex items-center">
           <a
             className="toggleColour text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl"
             href="#"
           >
+            <img className="h-12 w-12 inline-block mx-2 shadow-purple-400" src="logo.png" />
             Kuyo Coding Club
-            <br />
-            <small className="font-mono text-gray-300">
-              Learn | Make | Code
-            </small>
           </a>
         </div>
         <div className="block lg:hidden pr-4">
@@ -83,7 +80,7 @@ export default function NavBar() {
           </button>
         </div>
       </div>
-      <hr className="border-b border-gray-100 opacity-25 my-0 py-0" />
+      <hr className="border-b border-gray-100 opacity-25 my-0  py-0" />
     </nav>
   );
 }
