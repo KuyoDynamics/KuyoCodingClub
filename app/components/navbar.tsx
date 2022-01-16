@@ -23,8 +23,8 @@ const navLinks: Array<LinkType> = [
     url: "/pricing",
   },
   {
-    title: "Team",
-    url: "/team",
+    title: "Blog",
+    url: "/blog",
   },
 ];
 
