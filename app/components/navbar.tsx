@@ -1,4 +1,59 @@
+import { useLocation, useNavigate } from "remix";
+
+type LinkType = {
+  url: string;
+  title: string;
+};
+
+const navLinks: Array<LinkType> = [
+  {
+    title: "Home",
+    url: "/",
+  },
+  {
+    title: "Toolkits",
+    url: "/toolkits",
+  },
+  {
+    title: "Get Inspired!",
+    url: "/inspiration",
+  },
+  {
+    title: "Pricing",
+    url: "/pricing",
+  },
+  {
+    title: "Team",
+    url: "/team",
+  },
+];
+
+interface INavLinksProps {
+  links: Array<LinkType>;
+}
+
+function NavLinks({ links }: INavLinksProps) {
+  const { pathname } = useLocation();
+  return (
+    <ul className="list-reset lg:flex justify-end flex-1 items-center">
+      {links.map((link) => (
+        <li className="mr-3">
+          <a
+            className={`inline-block no-underline ${
+              link.url === pathname ? "font-bold" : ""
+            } hover:text-gray-800 hover:text-underline py-2 px-4`}
+            href={link.url}
+          >
+            {link.title}
+          </a>
+        </li>
+      ))}
+    </ul>
+  );
+}
+
 export default function NavBar() {
+  const navigate = useNavigate();
   return (
     <nav id="header" className="w-full z-30 top-0 text-white gradient">
       <div className="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 px-8 py-2">
@@ -7,7 +62,10 @@ export default function NavBar() {
             className="toggleColour text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl"
             href="#"
           >
-            <img className="h-12 w-12 inline-block mx-2 shadow-purple-400" src="logo.png" />
+            <img
+              className="h-12 w-12 inline-block mx-2 shadow-purple-400"
+              src="logo.png"
+            />
             Kuyo Coding Club
           </a>
         </div>
@@ -30,49 +88,9 @@ export default function NavBar() {
           className="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 bg-white lg:bg-transparent text-white p-4 lg:p-0 z-20"
           id="nav-content"
         >
-          <ul className="list-reset lg:flex justify-end flex-1 items-center">
-            <li className="mr-3">
-              <a
-                className="inline-block py-2 px-4 font-bold no-underline"
-                href="#"
-              >
-                Home
-              </a>
-            </li>
-            <li className="mr-3">
-              <a
-                className="inline-block no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
-                href="#"
-              >
-                Toolkits
-              </a>
-            </li>
-            <li className="mr-3">
-              <a
-                className="inline-block no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
-                href="#"
-              >
-                Get Inspired!
-              </a>
-            </li>
-            <li className="mr-3">
-              <a
-                className="inline-block no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
-                href="#"
-              >
-                Pricing
-              </a>
-            </li>
-            <li className="mr-3">
-              <a
-                className="inline-block no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
-                href="#"
-              >
-                Team
-              </a>
-            </li>
-          </ul>
+          <NavLinks links={navLinks} />
           <button
+            onClick={() => navigate("/login")}
             id="navAction"
             className="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
           >
