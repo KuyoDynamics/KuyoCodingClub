@@ -28,14 +28,14 @@ const navLinks: Array<LinkType> = [
   },
 ];
 
-interface INavLinksProps {
+interface INavbarLinksProps {
   links: Array<LinkType>;
 }
 
-function NavLinks({ links }: INavLinksProps) {
+function NavLinks({ links }: INavbarLinksProps) {
   const { pathname } = useLocation();
   return (
-    <ul className="list-reset lg:flex justify-end flex-1 items-center">
+    <ul className="lg:flex justify-end flex-1 items-center">
       {links.map((link) => (
         <li className="mr-3">
           <a
@@ -59,7 +59,7 @@ export default function NavBar() {
       <div className="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 px-8 py-2">
         <div className="flex items-center">
           <a
-            className="toggleColour text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl"
+            className="text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl"
             href="#"
           >
             <img
