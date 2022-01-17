@@ -60,7 +60,7 @@ export default function NavBar() {
         <div className="flex items-center">
           <a
             className="text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl"
-            href="#"
+            href="/"
           >
             <img
               className="h-12 w-12 inline-block mx-2 shadow-purple-400"
