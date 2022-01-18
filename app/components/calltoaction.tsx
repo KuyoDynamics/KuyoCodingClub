@@ -12,7 +12,7 @@ export default function CallToAction() {
       <h3 className="my-4 text-3xl leading-tight">
         Hangout with the buddies at Kuyo Coding Club!
       </h3>
-      <JoinClubButton />
+      <JoinClubButton animations="animate-pulse" />
     </div>
   );
 }
