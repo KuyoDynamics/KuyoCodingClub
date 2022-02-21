@@ -8,6 +8,8 @@ import WaveBottomSVG from "~/components/svg/wavebottom";
 import WaveTopSVG from "~/components/svg/wavetop";
 import ToolkitsList from "~/components/toolkitslist";
 import styles from "~/styles/index.css";
+import Partners from "~/components/partners";
+import Sponsors from "~/components/sponsors";
 
 export function links() {
   return [{ rel: "stylesheet", href: styles }];
@@ -29,7 +31,6 @@ export default function Index() {
           Aged 12-16 years?
         </h1>
         <p className="leading-normal text-2xl mb-8 text-black">
-         
           Awesome! You can become really good at computer programming, create
           awesome Apps and games. We provide you with all the cool toolkits, and
           help you meet/work with other tech savvy friends!
@@ -43,6 +44,12 @@ export default function Index() {
       </section>
       <section className="bg-gray-100 py-8">
         <Pricing />
+      </section>
+      <section className="bg-gray-100 py-8">
+        <Partners />
+      </section>
+      <section className="bg-gray-100 py-8">
+        <Sponsors />
       </section>
       <section>
         <WaveTopSVG />
