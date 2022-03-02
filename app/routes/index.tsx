@@ -17,7 +17,7 @@ export function links() {
 }
 export default function Index() {
   return (
-    <>
+    <div >
       <section>
         <NavBar />
       </section>
@@ -27,22 +27,22 @@ export default function Index() {
       <div className="relative -mt-12 lg:-mt-32">
         <WaveBottomSVG />
       </div>
-      <section className="bg-white border-b py-8">
+      <section className="bg-black border-b py-8">
         <TargetAudience />
       </section>
-      <section className="bg-white border-b py-8">
+      <section className="border-b py-8">
         <ToolkitsList />
       </section>
-      <section className="bg-white border-b py-8">
+      <section className="border-b py-8">
         <Inspiration />
       </section>
-      <section className="bg-gray-100 py-8">
+      <section className="py-8">
         <Pricing />
       </section>
-      <section className="bg-gray-100 py-8">
+      <section className="py-8">
         <Partners />
       </section>
-      <section className="bg-gray-100 py-8">
+      <section className="py-8">
         <Sponsors />
       </section>
       <section>
@@ -50,6 +50,6 @@ export default function Index() {
         <CallToAction />
       </section>
       <Footer />
-    </>
+    </div>
   );
 }
