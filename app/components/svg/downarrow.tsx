@@ -2,16 +2,12 @@ type PropType = {
   classNames: string;
 };
 
-interface IDownArrowProps {
-  props: PropType;
-}
-// animate-bounce h-6 w-6
-export default function DownArrow(classNames: string) {
+export default function DownArrow(props: PropType) {
   return (
     <>
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        className={classNames}
+        className={props.classNames}
         fill="none"
         viewBox="0 0 24 24"
         stroke="currentColor"
