@@ -1,4 +1,5 @@
 import DownArrow from "./svg/downarrow";
+// import ScratchBlocks from "scratchblocks-react";
 
 export default function TargetAudience() {
   return (
@@ -23,19 +24,18 @@ export default function TargetAudience() {
           <h2 className="leading-normal font-bold text-2xl mb-8 text-white text-center">
             Create <span className="text-yellow-300">awesome</span>{" "}
             <span className="text-green-500">Apps</span> and{" "}
-            <span className="text-green-500">games</span> in{" "}
+            <span className="text-green-500">Games</span> in{" "}
             <span className="text-blue-500 tracking-widest">minutes</span>!
           </h2>
           {/* Note: Here show a snippet of blocks on the left and equivalent text-based on the right! */}
-          {/* <pre>
-            <code>
-
-              if (true) &#123;
-                return  &quot;Yes &quot;;
-              &#125;
-             
-            </code>
-          </pre> */}
+          {/* <ScratchBlocks blockStyle="scratch3">
+            {`
+              when green flag clicked
+              forever
+                move (10) steps
+              end
+            `}
+          </ScratchBlocks> */}
           <DownArrow classNames="animate-bounce h-6 w-6" />
         </div>
       </div>
